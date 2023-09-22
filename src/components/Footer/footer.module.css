@@ -1,0 +1,13 @@
+.container{
+    height: 75px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.copyright{
+    justify-content: center ;
+    align-items: center;
+}

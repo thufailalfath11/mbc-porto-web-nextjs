@@ -22,6 +22,14 @@ a{
   color: inherit;
 }
 
+.light {
+  background-color: black;
+  color: white;
+}
+
+.theme{
+  transition: 1s all ease;
+}
 .container {
   max-width: 1366px;
   min-height: 100vh;
