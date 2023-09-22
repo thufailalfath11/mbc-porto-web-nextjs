@@ -28,9 +28,9 @@ const links = [
 ]
 
 const subMenu = [
-  "Big Data",
-  "Cyber Security",
-  "Game Tech",
+  "BigData",
+  "CyberSecurity",
+  "GameTech",
   "GIS",
 ]
 
