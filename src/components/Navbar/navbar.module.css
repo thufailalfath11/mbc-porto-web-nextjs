@@ -1,0 +1,52 @@
+.container{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+  .submenu {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .linkTitle {
+    cursor: pointer;
+  }
+  
+  .submenuContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submenu:hover .submenuContent {
+    display: block;
+  }
+  
+  .submenuItem {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .submenuItem:hover {
+    background-color: #555;
+  }
