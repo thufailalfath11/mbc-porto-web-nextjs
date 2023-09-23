@@ -1,0 +1,15 @@
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .animate_blink {
+    display: inline-block;
+    animation: blink 1s infinite; /* Ubah durasi animasi sesuai kebutuhan */
+  }
+  

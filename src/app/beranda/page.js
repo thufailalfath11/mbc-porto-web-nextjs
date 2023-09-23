@@ -1,13 +1,18 @@
+import Beranda from "@/components/Beranda/Beranda";
 import Footer from "@/components/Footer/page";
 import Navbar from "@/components/Navbar/page";
+import Image from "next/image";
 import React from "react";
 const beranda = () => {
   return (
+    
+    
     <div className="container">
       <Navbar />
-      <div >beranda</div>
+      <Beranda/>
       <Footer />
     </div>
+    
   );
 };
 
