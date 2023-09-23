@@ -5,7 +5,7 @@ const beranda = () => {
   return (
     <div className="container">
       <Navbar />
-      <div>beranda</div>
+      <div >beranda</div>
       <Footer />
     </div>
   );

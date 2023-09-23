@@ -24,12 +24,9 @@ const LoginForm = () => {
             </button>
           </div>
           <div className="w-full md:w-3/5 p-5">
-            <div className="text-left font-bold text-black-500 ">
-              <Link href="/login">MBC Porto</Link>
-            </div>
             <div className="py-10">
               <h2 className="text-3xl font-bold text-black mb-2">
-                Masuk dengan
+                MBC Porto
               </h2>
               <div className="border-2 w-10 border-black inline-block mb-2"></div>
               <div className="flex justify-center my-2">

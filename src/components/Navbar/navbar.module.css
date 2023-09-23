@@ -1,56 +1,55 @@
-.container{
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #000;
-    padding: 1rem;
+/* Default CSS yang berlaku untuk keduanya */
+.container {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid var(--border-color, #e40000); /* Gunakan variabel CSS untuk garis bawah */
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 27px;
-    
+  font-weight: bold;
+  font-size: 27px;
 }
 
-.links{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-  .submenu {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .linkTitle {
-    cursor: pointer;
-  }
-  
-  .submenuContent {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    z-index: 1;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .submenu:hover .submenuContent {
-    display: block;
-  }
-  
-  .submenuItem {
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .submenuItem:hover {
-    background-color: #555;
-  }
+.submenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.linkTitle {
+  cursor: pointer;
+}
+
+.submenuContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--menu-bg-color, #333); /* Gunakan variabel CSS untuk latar belakang submenu */
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submenu:hover .submenuContent {
+  display: block;
+}
+
+.submenuItem {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: var(--menu-text-color, #fff); /* Gunakan variabel CSS untuk warna teks submenu */
+}
+
+.submenuItem:hover {
+  background-color: var(--menu-hover-color, #555); /* Gunakan variabel CSS untuk warna latar belakang saat hover */
+}
