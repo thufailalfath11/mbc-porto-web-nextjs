@@ -8,6 +8,9 @@
     
   }
 
+  .konten{
+    height: auto;
+  }
   
   .title {
     font-size: 50px;
@@ -18,23 +21,8 @@
   }
   
  
-  .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px; /* Menambahkan jarak atas konten */
-  }
-  
-  .content p {
-    flex: 1;
-  }
-  
-  .content img {
-    max-width: 100%;
-    height: auto;
-    margin-left: 20px;
-  }
-  
+
+ 
   
 @keyframes fadeInUp {
   0% {

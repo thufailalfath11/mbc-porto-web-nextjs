@@ -31,7 +31,7 @@ a{
   transition: 1s all ease;
 }
 .container {
-  max-width: 1366px;
+  max-width: 1920px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 60px;
