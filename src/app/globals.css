@@ -39,3 +39,7 @@ a{
   flex-direction: column;
   justify-content: space-between;
 }
+
+.navbar {
+  z-index: 100;
+}

@@ -19,7 +19,7 @@ const TypingText = ({ content }) => {
           setShowCursor(false);
         }, 2000); // Mengatur kursor untuk disembunyikan setelah 2 detik
       }
-    }, 200);
+    }, 150);
 
     const cursorInterval = setInterval(() => {
       if (currentIndex < content.length) {

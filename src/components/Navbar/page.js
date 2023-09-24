@@ -1,6 +1,6 @@
-"use client"
+'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './navbar.module.css'
 import DarkModeToggle from '../DarkMode/DarkModeToggle'
 
@@ -36,13 +36,35 @@ const subMenu = [
 
 const Navbar = () => {
   const [showSubMenu, setShowSubMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleSubMenu = () => {
     setShowSubMenu(!showSubMenu);
   };
 
+  useEffect(() => {
+    // Fungsi yang akan dipanggil saat halaman digulir
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Tambahkan event listener ke window untuk mendengarkan event scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Bersihkan event listener saat komponen Navbar di-unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navbarClassName = isScrolled ? `${styles.container} ${styles.fixedNavbar}` : styles.container;
+
   return (
-    <div className={styles.container}>
+    <div className={navbarClassName}>
       <Link className={styles.logo} href='/beranda'>MBC Porto</Link>
       <div className={styles.links}>
         {links.map(link => (

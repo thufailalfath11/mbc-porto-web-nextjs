@@ -8,15 +8,22 @@
   border-bottom: 2px solid var(--border-color, #e40000); /* Gunakan variabel CSS untuk garis bawah */
 }
 
+
 .logo {
   font-weight: bold;
   font-size: 27px;
+  z-index: 10;
 }
 
 .links {
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 10;
+}
+.links a:hover {
+  color: #e40000; 
+  border-bottom: black;
 }
 
 .submenu {
@@ -52,4 +59,12 @@
 
 .submenuItem:hover {
   background-color: var(--menu-hover-color, #555); /* Gunakan variabel CSS untuk warna latar belakang saat hover */
+}
+.fixedNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* Atur warna latar belakang navbar sesuai kebutuhan Anda */
+  z-index: 100; /* Atur z-index untuk memastikan navbar tampil di atas konten lain */
+  
 }

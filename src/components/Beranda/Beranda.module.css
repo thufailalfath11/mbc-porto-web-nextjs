@@ -8,33 +8,16 @@
     
   }
 
-  .konten{
-    height: auto;
-  }
   
   .title {
     font-size: 50px;
     text-align: center;
     font-weight: bold;
-    margin-top: 75px; /* Menggeser judul ke atas */
+    margin-top: 100px; /* Menggeser judul ke atas */
     margin-bottom: 20px; /* Mengurangi jarak bawah judul */
   }
   
-  .backgroundContainer {
-    max-width: none;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
-    background-color: #474747;
-    border-radius: 5px;
-    margin-top: 100px;
-  }
-  
-  .backgroundContainer h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
+ 
   .content {
     display: flex;
     flex-direction: row;
@@ -67,3 +50,37 @@
 .content {
   animation: fadeInUp 1s ease 0.5s both; /* Animasi fadeIn saat scroll */
 }
+
+.about {
+    margin-bottom: 150px;
+}
+.scroll-down-animation {
+    animation: scrollDown 1s ease infinite;
+  }
+  
+  @keyframes scrollDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust the distance you want to scroll down */
+    }
+  }
+
+  .scrollArrow {
+    text-align: center;
+    font-size: 70px; /* Ukuran font tanda panah */
+    margin-top: 100px; /* Jarak antara teks dan tanda panah */
+    align-items: center;
+    justify-content: center;
+    animation: bounceUpDown 1.5s infinite;
+  }
+  
+  @keyframes bounceUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Sesuaikan jarak naik turun di sini */
+    }
+  }
