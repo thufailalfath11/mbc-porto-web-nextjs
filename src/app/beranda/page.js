@@ -5,8 +5,10 @@ import Navbar from "@/components/Navbar/page";
 
 import React from "react";
 
+
 const beranda = () => {
   return (
+
     <div>
       {/* ParticklesBG mencakup seluruh halaman */}
       <div className="w-full h-screen absolute top-0 left-0 z-0">
