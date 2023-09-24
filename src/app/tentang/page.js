@@ -1,10 +1,9 @@
-import Tentang from "@/components/Tentang/Tentang";
 import Footer from "@/components/Footer/page";
 import Navbar from "@/components/Navbar/page";
+import Tentang from "@/components/Tentang/Tentang";
 import React from "react";
-import Image from "next/image";
 
-const tentang = () => {
+const kontak = () => {
   return (
     <div className="container">
       <Navbar />
@@ -14,4 +13,4 @@ const tentang = () => {
   );
 };
 
-export default tentang;
+export default kontak;

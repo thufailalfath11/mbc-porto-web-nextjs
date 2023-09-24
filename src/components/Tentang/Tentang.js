@@ -1,37 +1,31 @@
-'use client';
-import TypingText from "@/common/TypingText/TypingText";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./Tentang.module.css";
 import 'aos/dist/aos.css';
 import Image from "next/image";
+import Button from "@/common/Button/Button"; // Saya asumsikan Anda memiliki komponen Button yang diimpor dari lokasi yang benar
+import { items } from "./items"; // Ganti "path-to-your-items-file" dengan lokasi file items.js Anda
 
 function Tentang() {
   return (
     <div className={styles.container}>
-      <div className={styles.judul}>
-        <img src="kerjasama.jpg" className={styles.foto} />
-        MBC porto
-      </div>
 
-      <div className={styles.rowContainer}>
-        <div className={styles.gambarContainer}>
-          <img src="/path/to/gambar1.jpg" alt="Gambar 1" />
+      {items.map(item => (
+        <div className={styles.item} key={item.id}>
+          <div className={styles.content}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <p className={styles.desc}>{item.desc}</p>
+            <Button text="See More" url="#" />
+          </div>
+          <div className={styles.imgContainer}>
+            <Image
+              className={styles.img}
+              fill={true}
+              src={item.image}
+              alt=""
+            />
+          </div>
         </div>
-        <div className={styles.teksContainer}>
-          <h2>Judul 1</h2>
-          <p>Ini adalah teks untuk kontainer 1.</p>
-        </div>
-      </div>
-
-      <div className={styles.rowContainer}>
-        <div className={styles.gambarContainer}>
-          <img src="/path/to/gambar2.jpg" alt="Gambar 2" />
-        </div>
-        <div className={styles.teksContainer}>
-          <h2>Judul 2</h2>
-          <p>Ini adalah teks untuk kontainer 2.</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
