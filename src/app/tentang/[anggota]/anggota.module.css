@@ -80,7 +80,7 @@
     margin: 2px 0 12px 0;
   }
   
-  .caption .social-links i {
+  .caption .socialLinks a {
     font-size: 21px;
     margin: 0 3px;
     cursor: pointer;
@@ -88,7 +88,22 @@
     transition: all 0.4s;
   }
   
-  .caption .social-links i:hover {
+  .caption .socialLinks a:hover {
     color: #0c52a1;
   }
+  .socialLinks {
+    margin-top: 15px;
+  }
   
+  .socialLink {
+    height: 2px;
+    width: 2px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.4s;
+  }
+  
+  .socialLink:hover {
+    color: #0c52a1;
+  }
