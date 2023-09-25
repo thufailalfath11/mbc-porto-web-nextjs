@@ -78,10 +78,10 @@ function Beranda() {
       <Image src="/about-image.png" width={500} height={500} data-aos="fade-right" />
       <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
         <h2 className="text-4xl font-bold mb-2 bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600" data-aos="fade-up">
-          Tentang Kami
+        Karya Tubes Kami
         </h2>
         <p className="text-base lg:text-lg mb-4" data-aos="fade-up">
-          I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing applications.
+        Halo Sobat MBCporto! Di sini, Anda akan menemukan berbagai proyek yang telah kami kerjakan dengan penuh dedikasi dan semangat. kami senang berbagi perjalanan kreatif dan pencapaian kami dalam mengatasi tantangan yang telah kami hadapi. Mari kita menjelajahi portfolio ini bersama dan lihat bagaimana kami telah mewujudkan ide-ide dalam hasil Tubes kami.
         </p>
       </div>
     </div>
@@ -101,13 +101,7 @@ function Beranda() {
             </h2>
             {showLatBelakang && (
               <p className="text-base lg:text-lg" data-aos="fade-up">
-                I am a full stack web developer with a passion for creating
-                interactive and responsive web applications. I have experience
-                working with JavaScript, React, Redux, Node.js, Express,
-                PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner
-                and I am always looking to expand my knowledge and skill set. I
-                am a team player and I am excited to work with others to create
-                amazing applications.
+                Website ini merupakan hasil kolaboratif dari Tim CAAS di MBCLab yang terdiri dari anggota-anggota berbakat dari berbagai latar devisi, yang bersatu untuk menjalankan serangkaian proyek Tugas Besar CAAS MBClab yang penuh semangat. Melalui kerjasama kami, kami telah berhasil menghasilkan karya-karya yang mencerminkan kolaborasi lintas disiplin, kreativitas, dan tekad kami dalam mencapai prestasi luar biasa. Kami berharap karya-karya kami menginspirasi dan menunjukkan potensi yang kami tawarkan melalui kerjasama tim kami. Terima kasih telah mengunjungi halaman kami dan selamat menikmati eksplorasi kami dalam dunia riset dan inovasi di MBCLab.
               </p>
             )}
           </div>
