@@ -1,0 +1,42 @@
+name: Node.js CI and Deploy
+
+on:
+  push:
+    branches:
+      - Master
+  pull_request:
+    branches:
+      - Master
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.18.0'
+
+    - name: Build
+      run: | 
+        npm install
+        npm run build
+
+    - name: Stop and Remove Previous Docker Container
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        key : ${{ secrets.SSH_SECRETS }}
+        host: ${{ secrets.HOST_SECRETS }}
+        username: ${{ secrets.USERNAME_SECRETS }}
+        script: |
+          sudo docker stop mbc-porto-web-nextjs-app-1 || true 
+          sudo docker rm mbc-porto-web-nextjs-app-1|| true 
+          sudo docker rmi mbc-porto-web-nextjs-app || true 
+          cd /home/pabanasuryp/website/mbc-porto-web-nextjs
+          sudo git pull origin Master && sudo docker compose up --build -d
+          
