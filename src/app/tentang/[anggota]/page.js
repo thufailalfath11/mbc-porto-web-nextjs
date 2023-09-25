@@ -1,0 +1,50 @@
+import React from "react";
+import styles from "./anggota.module.css";
+import Image from "next/image";
+import { items } from "./data.js";
+import { notFound } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon dari paket FontAwesome
+
+const getData = (cat) => {
+  const data = items[cat];
+
+  if (data) {
+    return data;
+  }
+
+  return notFound();
+};
+
+const Anggota = ({ params }) => {
+  const data = getData(params.anggota);
+  return (
+    <div className={styles.container}>
+      {data.map((item) => (
+        <div className={styles.homeContainer} key={item.id}>
+          <div className={styles.profileCard}>
+            <div className={styles.img}>
+              <img src={item.image} alt={item.title} />
+            </div>
+            <div className={styles.caption}>
+              <h3 className={styles.nama}>{item.title}</h3>
+              <p className={styles.deskripsi}>Front End Developer</p>
+              <div className={styles.socialLinks}>
+                <a href="#" className={styles.socialLink}>
+                  <FontAwesomeIcon icon={["fab", "facebook"]} /> {/* Ikon Facebook */}
+                </a>
+                <a href="#" className={styles.socialLink}>
+                  <FontAwesomeIcon icon={["fab", "instagram"]} /> {/* Ikon Instagram */}
+                </a>
+                <a href="#" className={styles.socialLink}>
+                  <FontAwesomeIcon icon={["fab", "github"]} /> {/* Ikon GitHub */}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Anggota;
