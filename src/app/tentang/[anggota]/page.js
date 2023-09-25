@@ -5,6 +5,8 @@ import { items } from "./data.js";
 import { notFound } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon dari paket FontAwesome
 import { faFacebook, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "@/components/Navbar/page";
+import Footer from "@/components/Footer/page";
 
 const getData = (cat) => {
   const data = items[cat];
@@ -19,6 +21,8 @@ const getData = (cat) => {
 const Anggota = ({ params }) => {
   const data = getData(params.anggota);
   return (
+    <div className="container">
+      <Navbar/>
     <div className={styles.container}>
       {data.map((item) => (
         <div className={styles.homeContainer} key={item.id}>
@@ -44,6 +48,8 @@ const Anggota = ({ params }) => {
           </div>
         </div>
       ))}
+    </div>
+    <Footer/>
     </div>
   );
 };
