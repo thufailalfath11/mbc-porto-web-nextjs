@@ -37,7 +37,7 @@ export const items = {
         title: "agni",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
         image:
-          "/team/agni.png",
+          "/team/Agni.png",
       },
       {
         id: 2,
@@ -75,7 +75,7 @@ export const items = {
         title: "riski ananda",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
         image:
-          "",
+          "/team/rizki.png",
       },
       {
         id: 4,
@@ -89,7 +89,7 @@ export const items = {
         title: "putra",
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
         image:
-          "",
+          "/team/Putra.png",
       }
     ],
     anggotagis: [
@@ -98,7 +98,7 @@ export const items = {
           title: "hakim",
           desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
           image:
-            "",
+            "/team/Hakim.png",
         },
         {
           id: 2,
@@ -112,7 +112,7 @@ export const items = {
           title: "abyan",
           desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
           image:
-            "",
+            "/team/abyan.png",
         }
       ],
   };
