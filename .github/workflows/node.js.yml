@@ -39,3 +39,4 @@ jobs:
           sudo docker rmi mbc-porto-web-nextjs-app || true 
           cd /home/pabanasuryp/website/mbc-porto-web-nextjs
           sudo git pull origin Master && sudo docker compose up --build -d
+          
