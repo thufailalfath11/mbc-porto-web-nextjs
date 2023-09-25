@@ -1,38 +1,29 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styles from "./anggota.module.css";
-import Navbar from "@/components/Navbar/page";
-import Footer from "@/components/Footer/page";
 import { items } from "./data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Profile = () => {
-  const pembinaData = items.pembina;
-  const asistenData = items.asisten;
-  const caasData = items.caas;
-
-  const [pembinaVisible, setPembinaVisible] = useState(false);
-  const [asistenVisible, setAsistenVisible] = useState(false);
-  const [caasVisible, setCaasVisible] = useState(false);
-
   useEffect(() => {
+    AOS.init({
+      duration: 2000, // Adjust this duration as needed
+      once: true, // Whether the animation should only happen once
+    });
+
+    // Add a scroll event listener
     const handleScroll = () => {
-      const pembinaTitle = document.getElementById("pembina-title");
-      const asistenTitle = document.getElementById("asisten-title");
-      const caasTitle = document.getElementById("caas-title");
+      const elements = document.querySelectorAll('[data-aos]');
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const topVisible = rect.top <= window.innerHeight;
+        const bottomVisible = rect.bottom <= window.innerHeight;
 
-      const scrolled = window.scrollY;
-
-      if (pembinaTitle && !pembinaVisible && scrolled > pembinaTitle.offsetTop - window.innerHeight / 2) {
-        setPembinaVisible(true);
-      }
-
-      if (asistenTitle && !asistenVisible && scrolled > asistenTitle.offsetTop - window.innerHeight / 2) {
-        setAsistenVisible(true);
-      }
-
-      if (caasTitle && !caasVisible && scrolled > caasTitle.offsetTop - window.innerHeight / 2) {
-        setCaasVisible(true);
-      }
+        if (topVisible && bottomVisible) {
+          element.classList.add('aos-animate'); // Trigger the AOS animation
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,17 +31,22 @@ const Profile = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [pembinaVisible, asistenVisible, caasVisible]);
+  }, []);
+
+  const pembinaData = items.pembina;
+  const asistenData = items.asisten;
+  const caasData = items.pembina;
 
   return (
-    <div >
+    <div className="container">
+
       <h1 className={styles.title}>PEMBINA</h1>
-      <div className={`${styles.container}`}>
-        {pembinaData.map((item, index) => (
-          <div className={`${styles.homeContainer} ${pembinaVisible && styles.fadeIn}`} key={item.id} style={{ animationDelay: `${index * 0.2}s` }}>
-            <div className={`${styles.profileCard} ${pembinaVisible && styles.fadeIn}`}>
+      <div className={styles.container} data-aos="fade-up">
+        {pembinaData.map((item) => (
+          <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
+            <div className={styles.profileCard}>
               <div className={styles.img}>
-                {pembinaVisible && <img src={item.image} alt={item.title} />}
+                <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
@@ -60,14 +56,13 @@ const Profile = () => {
           </div>
         ))}
       </div>
-
-      <h1 id="asisten-title" className={styles.title}>ASISTEN</h1>
-      <div className={`${styles.container}`}>
-        {asistenData.map((item, index) => (
-          <div className={`${styles.homeContainer} ${asistenVisible && styles.fadeIn}`} key={item.id} style={{ animationDelay: `${index * 0.2}s` }}>
-            <div className={`${styles.profileCard} ${asistenVisible && styles.fadeIn}`}>
+      <h1 className={styles.title}>ASISTEN</h1>
+      <div className={styles.container} data-aos="fade-up">
+        {asistenData.map((item) => (
+          <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
+            <div className={styles.profileCard}>
               <div className={styles.img}>
-                {asistenVisible && <img src={item.image} alt={item.title} />}
+                <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
@@ -77,14 +72,13 @@ const Profile = () => {
           </div>
         ))}
       </div>
-
-      <h1 id="caas-title" className={styles.title}>CAAS</h1>
-      <div className={`${styles.container}`}>
-        {caasData.map((item, index) => (
-          <div className={`${styles.homeContainer} ${caasVisible && styles.fadeIn}`} key={item.id} style={{ animationDelay: `${index * 0.2}s` }}>
-            <div className={`${styles.profileCard} ${caasVisible && styles.fadeIn}`}>
+      <h1 className={styles.title}>CAAS</h1>
+      <div className={styles.container} data-aos="fade-up">
+        {caasData.map((item) => (
+          <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
+            <div className={styles.profileCard}>
               <div className={styles.img}>
-                {caasVisible && <img src={item.image} alt={item.title} />}
+                <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
                 <h3 className={styles.nama}>{item.title}</h3>
