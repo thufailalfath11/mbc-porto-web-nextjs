@@ -17,21 +17,41 @@ const links = [
   },
   {
     id: 3,
-    title: "| Divisi",
-    url: "/divisi",
+    title: "| Profile",
+    url: "/profile",
   },
   {
     id: 4,
+    title: "| Tugas",
+    url: "/tugas",
+    submenu: [
+      {
+        id: 41,
+        title: "MyTucTuc",
+        url: "/tugas/mytuctuc",
+      },
+      {
+        id: 42,
+        title: "Ruins",
+        url: "/tugas/ruins",
+      },
+      {
+        id: 43,
+        title: "Mechine Learning",
+        url: "/tugas/mechinelearning",
+      },
+      {
+        id: 43,
+        title: "Website",
+        url: "/tugas/website",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "| Kontak",
     url: "/kontak",
   },
-]
-
-const subMenu = [
-  "BigData",
-  "CyberSecurity",
-  "GameTech",
-  "GIS",
 ]
 
 const Navbar = () => {
@@ -43,7 +63,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Fungsi yang akan dipanggil saat halaman digulir
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolled(true);
@@ -52,10 +71,8 @@ const Navbar = () => {
       }
     };
 
-    // Tambahkan event listener ke window untuk mendengarkan event scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Bersihkan event listener saat komponen Navbar di-unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -68,7 +85,7 @@ const Navbar = () => {
       <Link className={styles.logo} href='/beranda'>MBC Porto</Link>
       <div className={styles.links}>
         {links.map(link => (
-          link.title === "| Divisi" ? (
+          link.title === "| Tugas" ? (
             <div
               key={link.id}
               className={styles.submenu}
@@ -78,13 +95,13 @@ const Navbar = () => {
               <span className={styles.linkTitle}>{link.title}</span>
               {showSubMenu && (
                 <div className={styles.submenuContent}>
-                  {subMenu.map((item, index) => (
+                  {link.submenu.map((item, index) => (
                     <Link
-                      key={index}
-                      href={`/divisi/${item.toLowerCase()}`}
+                      key={item.id}
+                      href={item.url}
                       className={styles.submenuItem}
                     >
-                      {item}
+                      {item.title}
                     </Link>
                   ))}
                 </div>
@@ -94,9 +111,8 @@ const Navbar = () => {
             <Link key={link.id} href={link.url}>{link.title}</Link>
           )
         ))}
-        
       </div>
-      <DarkModeToggle/>
+      <DarkModeToggle />
     </div>
   )
 }

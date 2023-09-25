@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 2px solid var(--border-color, #e40000); /* Gunakan variabel CSS untuk garis bawah */
+  border-bottom: 2px solid var(--border-color, #e40000); 
 }
 
 
@@ -20,6 +20,7 @@
   align-items: center;
   gap: 20px;
   z-index: 10;
+  font-size: larger;
 }
 .links a:hover {
   color: #e40000; 
@@ -40,7 +41,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--menu-bg-color, #333); /* Gunakan variabel CSS untuk latar belakang submenu */
+  background-color: var(--menu-bg-color, #333);
   z-index: 1;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -54,17 +55,17 @@
   padding: 10px;
   display: block;
   text-decoration: none;
-  color: var(--menu-text-color, #fff); /* Gunakan variabel CSS untuk warna teks submenu */
+  color: var(--menu-text-color, #fff); 
 }
 
 .submenuItem:hover {
-  background-color: var(--menu-hover-color, #555); /* Gunakan variabel CSS untuk warna latar belakang saat hover */
+  background-color: var(--menu-hover-color, #555); 
 }
 .fixedNavbar {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; /* Atur warna latar belakang navbar sesuai kebutuhan Anda */
-  z-index: 100; /* Atur z-index untuk memastikan navbar tampil di atas konten lain */
+  right: 0; 
+  z-index: 100; 
   
 }
