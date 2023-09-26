@@ -3,10 +3,12 @@ export const items = {
       {
         id: 1,
         title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        desc: "Keahliandisini",
         image:
           "/team/Agni.png",
         codeass:"AAI",
+        nim:"nim",
+        divisi:"divisi",
       },
       {
         id: 2,

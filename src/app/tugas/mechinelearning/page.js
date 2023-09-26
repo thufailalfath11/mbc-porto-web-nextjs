@@ -6,7 +6,14 @@ const gametech = () => {
   return (
     <div className="container">
       <Navbar />
-      <div>beranda</div>
+      <iframe
+        src="https://prediksikualitasudara.streamlit.app/Mapping_Demo/?embed=true"
+        width="100%"
+        height="1080"
+        frameBorder="0"
+        scrolling="no"
+        style={{ border: "none" }}
+      ></iframe>
       <Footer />
     </div>
   );
