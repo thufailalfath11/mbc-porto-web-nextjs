@@ -1,13 +1,19 @@
+import ParticklesBG from "@/common/ParticklesBG/ParticklesBG";
+import Kontak from "@/components/Kontak/Kontak";
 import Footer from "@/components/Footer/page";
 import Navbar from "@/components/Navbar/page";
-import React from "react";
 
 const kontak = () => {
   return (
-    <div className="container">
-      <Navbar />
-      <div>beranda</div>
-      <Footer />
+    <div>
+      <div className="container">
+        {/* <div className="w-full h-screen absolute top-0 left-0 z-0">
+        <ParticklesBG />
+      </div> */}
+        <Navbar />
+        <Kontak />
+        <Footer />
+      </div>
     </div>
   );
 };
