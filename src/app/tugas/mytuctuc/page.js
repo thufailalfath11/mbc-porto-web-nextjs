@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/page";
-import MyTucTuc from "@/components/MyTucTuc/MyTucTuc";
+import MyTucTuc from "@/components/MyTucTuc/mytuctuc";
 import Navbar from "@/components/Navbar/page";
 import React from "react";
 
