@@ -7,7 +7,7 @@ const bigdata = () => {
   return (
     <div className="container">
       <Navbar />
-      <MyTucTuc/>
+      <MyTucTuc />
       <Footer />
     </div>
   );
