@@ -6,6 +6,7 @@ export const items = {
         desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
         image:
           "/team/Agni.png",
+        codeass:"AAI",
       },
       {
         id: 2,
