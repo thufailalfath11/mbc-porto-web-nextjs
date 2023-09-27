@@ -2,68 +2,39 @@ export const items = {
     pembina: [
       {
         id: 1,
-        title: "agni",
-        desc: "Keahliandisini",
+        title: "Danu Dwi Sanjoyo",
         image:
-          "/team/Agni.png",
-        codeass:"AAI",
-        nim:"nim",
-        divisi:"divisi",
+          "//.jpg",
+        codedosen:"DWJ",
+        nip:"14880082",
+        posisi: "Pembina Utama",
       },
       {
         id: 2,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Sri Astuti",
         image:
-          "/team/farel.png",
+          "//.jpg",
+        codedosen:"TUI",
+        nip:"20850004",
+        posisi: "Pembina",
       },
       {
         id: 3,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Sussi",
         image:
-          "/team/mei.png",
+          "//.jpg",
+        codedosen:"SUI",
+        nip:"20830010",
+        posisi: "Pembina",
       },
       {
         id: 4,
-        title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Bagus Aditya",
         image:
-          "/team/Agni.png",
-      },
-      {
-        id: 5,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/farel.png",
-      },
-      {
-        id: 6,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/mei.png",
-      }, {
-        id: 7,
-        title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/Agni.png",
-      },
-      {
-        id: 8,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/farel.png",
-      },
-      {
-        id: 9,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/mei.png",
+          "//.jpg",
+        codedosen:"BGY",
+        nip:"20900007",
+        posisi: "Pembina",
       },
     ],
     asisten: [
@@ -300,65 +271,138 @@ export const items = {
     caas: [
       {
         id: 1,
-        title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Thufail Agung Fathih",
+        desc: "TT-45-03",
         image:
-          "/team/Agni.png",
+          "/team/thufail.png",
+        nim:"1101210333",
+        divisi: "Cybersecurity",
       },
       {
         id: 2,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Muhammad Surya Danendra Pabana        ",
+        desc: "TT-45-02",
         image:
-          "/team/farel.png",
+          "/team/surya.png",
+        nim: "1101210209",
+        divisi: "Cybersecurity",
       },
       {
         id: 3,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Muhammad Reza Aditria        ",
+        desc: "TT-45-04",
         image:
-          "/team/mei.png",
+          "/team/reza.png",
+        nim: "1101210282",
+        divisi: "Cybersecurity",
       },
       {
         id: 4,
-        title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Pandu Dwi Nugraha Surya Putra",
+        desc: "TT-46-07",
         image:
-          "/team/Agni.png",
+          "/team/pandu.png",
+        nim: "1101220156",
+       divisi: "Cybersecurity",
       },
       {
         id: 5,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Agni Pulung Tondo Drawino",
+        desc: "TT-45-08",
         image:
-          "/team/farel.png",
+          "/team/Agni.png",
+        nim: "1101210072",
+        divisi: "Big Data",
       },
       {
         id: 6,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Alfarelzi",
+        desc: "TT-45-05",
         image:
-          "/team/mei.png",
-      }, {
-        id: 7,
-        title: "agni",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-        image:
-          "/team/Agni.png",
+          "/team/farel.png",
+        nim: "1101210384",
+        divisi: "Big Data",
       },
       {
         id: 8,
-        title: "farel",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Rr Meidita Thifal Lelyta",
+        desc: "TT-45-07",
         image:
-          "/team/farel.png",
+          "/team/mei.png",
+        nim: "1101213060",
+        divisi: "Big Data",
       },
       {
         id: 9,
-        title: "mei",
-        desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
+        title: "Nathanael Dwi Cahyo",
+        desc: "TT-45-10",
         image:
-          "/team/mei.png",
+          "/team/.png",
+        nim: "1101210329",
+        divisi: "GameTech",
+      },
+      {
+        id: 10,
+        title: "Putra Pratama Sijabat",
+        desc: "TT-45-09",
+        image:
+          "/team/Putra.png",
+        nim: "1101210298",
+        divisi: "GameTech",
+      },
+      {
+        id: 11,
+        title: "Rizki Ananda",
+        desc: "TT-46-07",
+        image:
+          "/team/rizki.png",
+        nim: "1101223162",
+        divisi: "GameTech",
+      },
+      {
+        id: 12,
+        title: "Mohammad Farrel William",
+        desc: "TT-45-03",
+        image:
+          "/team/farel.png",
+        nim: "1101210306",
+        divisi: "GameTech",
+      },
+      {
+        id: 13,
+        title: "Fayyadh Asady",
+        desc: "TT-46-09",
+        image:
+          "/team/.png",
+        nim: "1101220353",
+        divisi: "GameTech",
+      },
+      {
+        id: 14,
+        title: "Firscha Aulia Ghassani Fikri",
+        desc: "TT-45-01",
+        image:
+          "/team/firscha.png",
+        nim: "1101210390",
+        divisi: "GIS",
+      },
+      {
+        id: 15,
+        title: "Muhammad Abdul Hakim",
+        desc: "TT-45-08",
+        image:
+          "/team/Hakim.png",
+        nim: "1101213039",
+        divisi: "GIS",
+      },
+      {
+        id: 16,
+        title: "Muhammad Abyan Harits",
+        desc: "TT-45-07",
+        image:
+          "/team/abyan.png",
+        nim: "1101210258",
+        divisi: "GIS",
       },
     ],
     
