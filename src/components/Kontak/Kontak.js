@@ -60,7 +60,7 @@ const Contact = () => {
                 <div className='box'>
                   <FiHeadphones size={30} className='icons' />
                   <h3>1-001-234-5678</h3>
-                  <span>Hubungi Kami: Senin -  Jum'at 9:00 - 19:00</span>
+                  <span>Hubungi Kami: Senin -  Jumat 9:00 - 19:00</span>
                 </div>
                 <div className='box'>
                   <IoLocationOutline size={30} className='icons' />
