@@ -6,7 +6,7 @@ const cybersecurity = () => {
   return (
     <div className="container">
       <Navbar />
-      <div className="2xl: text-9xl">Ya ini Websitenya.......!!!!!!!</div>
+      <div className="2xl: text-9xl"> Ini Websitenya....</div>
       <Footer />
     </div>
   );
