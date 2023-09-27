@@ -127,9 +127,11 @@ const Navbar = () => {
           )
         ))}
       </div>
+      <div className='flex justify-center items-center gap-4'>
       <DarkModeToggle/>
       <div className={styles.currentTime}>
         {formattedTime}
+        </div>
         </div>
     </div>
   );

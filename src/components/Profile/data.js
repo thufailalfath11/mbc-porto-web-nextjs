@@ -2,36 +2,36 @@ export const items = {
     pembina: [
       {
         id: 1,
-        title: "Danu Dwi Sanjoyo",
+        title: "Dr.Eng Danu Dwi Sanjoyo, ST., MT.",
         image:
-          "//.jpg",
+          "/pembina/DWJ.png",
         codedosen:"DWJ",
         nip:"14880082",
         posisi: "Pembina Utama",
       },
       {
         id: 2,
-        title: "Sri Astuti",
+        title: "Sri Astuti, S.T., M.T.",
         image:
-          "//.jpg",
+        "/pembina/TUI.png",
         codedosen:"TUI",
         nip:"20850004",
         posisi: "Pembina",
       },
       {
         id: 3,
-        title: "Sussi",
+        title: "Sussi, S.Si., MT.",
         image:
-          "//.jpg",
+        "/pembina/SUI.png",
         codedosen:"SUI",
         nip:"20830010",
         posisi: "Pembina",
       },
       {
         id: 4,
-        title: "Bagus Aditya",
+        title: "Bagus Aditya, S.T., M.T",
         image:
-          "//.jpg",
+        "/pembina/BGY.png",
         codedosen:"BGY",
         nip:"20900007",
         posisi: "Pembina",

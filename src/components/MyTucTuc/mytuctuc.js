@@ -24,7 +24,8 @@ function MyTucTuc() {
       <div className={styles.item}>
         <div className={styles.content}>
           <h1 className={styles.title}>MyTucTuc</h1>
-          <p className={styles.desc}>Aplikasi MyTUC adalah mobile apps berbasis AR yang dapat menvisualisasikan 3D object tentang rute dari TUC (Telkom University Car). Dalam pembuatan aplikasi ini, kami menggunakan Blender untuk 3D modelling bangunan-bangunan yang dilewati oleh TUC. Selain itu, kami juga menggunakan Figma untuk desain interface dari aplikasi MyTUC ini. Terakhir, kami menggunakan Game Engine Unity untuk mewujudkan aplikasi MyTUC ini agar dapat di gunakan di HP masing-masing.</p>
+          <p className={styles.desc}>Tuc-Tuc merupakan alat transportasi yang berada di dalam kampus yang dapat digunakan oleh mahasiswa/i Telkom University untuk memudahkan mobilisasi atau kegiatan dalam lingkungan kampus. Karena itu kami membuat aplikasi MyTuc. MyTuc merupakan aplikasi mobile apps berbasis AR yang dibuat untuk memudahkan mahasiswa/i Telkom University untuk memantau rute Tel-U Car (TUC). Dimana pada aplikasi ini terdapat menu untuk rute, jadwal, tentang, dan bantuan. Serta pada aplikasi ini juga disediakan fitur scan AR, dimana rute Tuc-Tuc akan ditampilkan secara 3D animasi agar lebih memudahkan mahasiswa/i Telkom University untuk memahami rute Tuc-tuc.
+Dalam pembuatan aplikasi ini, kami menggunakan Blender untuk 3D modelling bangunan-bangunan yang dilewati oleh TUC. Selain itu, kami juga menggunakan Figma untuk desain interface dari aplikasi MyTUC ini. Terakhir, kami menggunakan Game Engine Unity untuk mewujudkan aplikasi MyTUC ini agar dapat di gunakan di HP masing-masing.</p>
           <div className={styles.Button}>
             <Button text="Download" url='https://bit.ly/DownloadMyTucApp' />
             <button onClick={openModal} className={styles.scanQrButton}>Scan QR</button>
@@ -44,9 +45,7 @@ function MyTucTuc() {
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            {/* Gambar */}
             <img src="/mytuctuc/QR.jpeg" alt="QR Code" />
-            {/* Tombol untuk menutup modal */}
             <button onClick={closeModal} className={styles.closeButton}>Close</button>
           </div>
         </div>
