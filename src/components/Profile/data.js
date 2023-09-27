@@ -268,6 +268,7 @@ export const items = {
         divisi: "GIS",
       },
     ],
+    
     caas: [
       {
         id: 1,
@@ -337,7 +338,7 @@ export const items = {
         title: "Nathanael Dwi Cahyo",
         desc: "TT-45-10",
         image:
-          "/team/.png",
+          "/team/nathan.png",
         nim: "1101210329",
         divisi: "GameTech",
       },
@@ -373,7 +374,7 @@ export const items = {
         title: "Fayyadh Asady",
         desc: "TT-46-09",
         image:
-          "/team/.png",
+          "/team/Fayyadh.png",
         nim: "1101220353",
         divisi: "GameTech",
       },
