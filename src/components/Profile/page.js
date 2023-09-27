@@ -54,7 +54,7 @@ const Profile = () => {
               </div>
             </div>
             <h1 className="font-bold text-xl">{item.codedosen}</h1>
-            <h3 >{item.title}</h3>
+            <h3 className={styles.nama}>{item.title}</h3>
           </div>
         ))}
       </div>
