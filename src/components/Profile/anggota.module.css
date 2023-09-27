@@ -17,6 +17,7 @@
   flex-basis: calc(25% - 20px);
   margin-top: 10px;
   margin-bottom: 10px;
+  flex-direction: column;
 }
 
 .profileCard {
@@ -104,4 +105,8 @@
   padding: 10px; /* Add padding to the section title */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.nama{
+  text-align: center;
 }

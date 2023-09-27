@@ -1,8 +1,8 @@
 'use client'
-import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
-import styles from './navbar.module.css'
-import DarkModeToggle from '../DarkMode/DarkModeToggle'
+import React, { useState, useEffect } from 'react';
+import styles from './navbar.module.css';
+import Link from 'next/link';
+import DarkModeToggle from '../DarkMode/DarkModeToggle';
 
 const links = [
   {
@@ -37,11 +37,11 @@ const links = [
       },
       {
         id: 43,
-        title: "Mechine Learning",
+        title: "Machine Learning",
         url: "/tugas/mechinelearning",
       },
       {
-        id: 43,
+        id: 44,
         title: "Website",
         url: "/tugas/website",
       },
@@ -52,9 +52,24 @@ const links = [
     title: "| Kontak",
     url: "/kontak",
   },
-]
+];
 
 const Navbar = () => {
+ 
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); 
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+ 
+  const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -112,9 +127,12 @@ const Navbar = () => {
           )
         ))}
       </div>
-      <DarkModeToggle />
+      <DarkModeToggle/>
+      <div className={styles.currentTime}>
+        {formattedTime}
+        </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

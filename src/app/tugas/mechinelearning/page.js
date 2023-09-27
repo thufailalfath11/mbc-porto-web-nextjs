@@ -2,7 +2,7 @@ import Footer from "@/components/Footer/page";
 import Navbar from "@/components/Navbar/page";
 import React from "react";
 
-const gametech = () => {
+const mechinelearning = () => {
   return (
     <div className="container">
       <Navbar />
@@ -19,4 +19,4 @@ const gametech = () => {
   );
 };
 
-export default gametech;
+export default mechinelearning;

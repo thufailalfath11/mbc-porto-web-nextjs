@@ -8,11 +8,10 @@ import "aos/dist/aos.css";
 const Profile = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Adjust this duration as needed
-      once: true, // Whether the animation should only happen once
+      duration: 2000, 
+      once: true, 
     });
 
-    // Add a scroll event listener
     const handleScroll = () => {
       const elements = document.querySelectorAll('[data-aos]');
       elements.forEach((element) => {
@@ -21,7 +20,7 @@ const Profile = () => {
         const bottomVisible = rect.bottom <= window.innerHeight;
 
         if (topVisible && bottomVisible) {
-          element.classList.add('aos-animate'); // Trigger the AOS animation
+          element.classList.add('aos-animate'); 
         }
       });
     };
@@ -35,7 +34,7 @@ const Profile = () => {
 
   const pembinaData = items.pembina;
   const asistenData = items.asisten;
-  const caasData = items.pembina;
+  const caasData = items.caas;
 
   return (
     <div className="container">
@@ -49,10 +48,13 @@ const Profile = () => {
                 <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
-                <h3 className={styles.nama}>{item.title}</h3>
-                <p className={styles.deskripsi}>Front End Developer</p>
+                
+                <h3 className={styles.deskripsi}>{item.posisi}</h3>
+                <p className={styles.deskripsi}>{item.nip}</p>
               </div>
             </div>
+            <h1 className={styles.nama}>{item.codedosen}</h1>
+            <h3 >{item.title}</h3>
           </div>
         ))}
       </div>
@@ -65,10 +67,14 @@ const Profile = () => {
                 <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
-                <h3 className={styles.nama}>{item.title}</h3>
-                <p className={styles.deskripsi}>Front End Developer</p>
+                <h3>{item.divisi}</h3>
+                <h1>{item.nim}</h1>
+                <p className={styles.deskripsi}>{item.desc}</p>
+                
               </div>
             </div>
+            <h1>{item.codeass}</h1>
+            <h3 className={styles.nama}>{item.title}</h3>
           </div>
         ))}
       </div>
@@ -81,10 +87,12 @@ const Profile = () => {
                 <img src={item.image} alt={item.title} />
               </div>
               <div className={styles.caption}>
-                <h3 className={styles.nama}>{item.title}</h3>
-                <p className={styles.deskripsi}>Front End Developer</p>
+                <h3 >{item.divisi}</h3>
+                <p className={styles.deskripsi}>{item.desc}</p>
+                <h1>{item.nim}</h1>
               </div>
             </div>
+            <h1 className={styles.nama}>{item.title}</h1>
           </div>
         ))}
       </div>

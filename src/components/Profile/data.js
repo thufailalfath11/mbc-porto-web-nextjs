@@ -272,7 +272,7 @@ export const items = {
     caas: [
       {
         id: 1,
-        title: "Thufail Agung Fathih",
+        title: "Thufail Agung Fatih",
         desc: "TT-45-03",
         image:
           "/team/thufail.png",
@@ -325,7 +325,7 @@ export const items = {
         divisi: "Big Data",
       },
       {
-        id: 8,
+        id: 7,
         title: "Rr Meidita Thifal Lelyta",
         desc: "TT-45-07",
         image:
@@ -334,7 +334,7 @@ export const items = {
         divisi: "Big Data",
       },
       {
-        id: 9,
+        id: 8,
         title: "Nathanael Dwi Cahyo",
         desc: "TT-45-10",
         image:
@@ -343,7 +343,7 @@ export const items = {
         divisi: "GameTech",
       },
       {
-        id: 10,
+        id: 9,
         title: "Putra Pratama Sijabat",
         desc: "TT-45-09",
         image:
@@ -352,7 +352,7 @@ export const items = {
         divisi: "GameTech",
       },
       {
-        id: 11,
+        id: 10,
         title: "Rizki Ananda",
         desc: "TT-46-07",
         image:
@@ -361,7 +361,7 @@ export const items = {
         divisi: "GameTech",
       },
       {
-        id: 12,
+        id: 11,
         title: "Mohammad Farrel William",
         desc: "TT-45-03",
         image:
@@ -370,7 +370,7 @@ export const items = {
         divisi: "GameTech",
       },
       {
-        id: 13,
+        id: 12,
         title: "Fayyadh Asady",
         desc: "TT-46-09",
         image:
@@ -379,7 +379,7 @@ export const items = {
         divisi: "GameTech",
       },
       {
-        id: 14,
+        id: 13,
         title: "Firscha Aulia Ghassani Fikri",
         desc: "TT-45-01",
         image:
@@ -388,7 +388,7 @@ export const items = {
         divisi: "GIS",
       },
       {
-        id: 15,
+        id: 14,
         title: "Muhammad Abdul Hakim",
         desc: "TT-45-08",
         image:
@@ -397,7 +397,7 @@ export const items = {
         divisi: "GIS",
       },
       {
-        id: 16,
+        id: 15,
         title: "Muhammad Abyan Harits",
         desc: "TT-45-07",
         image:
