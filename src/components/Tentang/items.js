@@ -3,7 +3,7 @@ export const items = [
       id: 1,
       title: "Apa itu MBC?",
       desc: "MBC memiliki kepanjangan Multimedia, Big Data, and Cyber Security, salah satu Laboratorium diatas naungan Kelompok Keahlian Nertworking, Cybernetics, dan Enginerering Management (KK NCM) yang mempelajari mengenai CyberSecurity, Bigdata, GIS, dan Gametech.",
-      image: "/divisi/CS.jpg",
+      image: "/divisi/MBC.jpg",
     url: "/tentang/anggotacs"
     },
     {
@@ -16,8 +16,8 @@ export const items = [
     {
       id: 3,
       title: "Divisi MBC",
-      desc: "Saat ini Laboratorium MBC Memiliki 4 devisi fokus khusus Cyber Security, Bigdata, GIS, dan Gametech.",
-      image: "/divisi/GT.jpg",
+      desc: "Saat ini Laboratorium MBC Memiliki 4 devisi fokus khusus Cyber ecurity, Bigdata, GIS, dan Gametech.",
+      image: "/divisi/divisi.jpg",
       url: "/tentang/anggotagt"
     },           
        {
