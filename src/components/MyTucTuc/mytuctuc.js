@@ -44,9 +44,7 @@ function MyTucTuc() {
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            {/* Gambar */}
             <img src="/mytuctuc/QR.jpeg" alt="QR Code" />
-            {/* Tombol untuk menutup modal */}
             <button onClick={closeModal} className={styles.closeButton}>Close</button>
           </div>
         </div>

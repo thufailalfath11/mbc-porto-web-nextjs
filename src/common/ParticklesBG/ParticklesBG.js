@@ -7,7 +7,7 @@ import { ThemeContext } from '@/context/ThemeContext';
 
 const ParticklesBG = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const { mode } = useContext(ThemeContext); // Menggunakan mode tema dari konteks
+  const { mode } = useContext(ThemeContext); 
 
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
