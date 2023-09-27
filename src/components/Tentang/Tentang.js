@@ -14,7 +14,7 @@ function Tentang() {
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
-            {/* Menampilkan tombol hanya pada item dengan ID ke-3 */}
+      
             {item.id === 3 && (
               <Button text="Lihat Divisi Kami" url={item.url} />
             )}

@@ -53,7 +53,7 @@ const Profile = () => {
                 <p className={styles.deskripsi}>{item.nip}</p>
               </div>
             </div>
-            <h1 className={styles.nama}>{item.codedosen}</h1>
+            <h1 className="font-bold text-xl">{item.codedosen}</h1>
             <h3 >{item.title}</h3>
           </div>
         ))}
@@ -73,7 +73,7 @@ const Profile = () => {
                 
               </div>
             </div>
-            <h1>{item.codeass}</h1>
+            <h1 className="font-bold text-xl">{item.codeass}</h1>
             <h3 className={styles.nama}>{item.title}</h3>
           </div>
         ))}
