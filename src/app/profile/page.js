@@ -7,17 +7,12 @@ import React from 'react'
 
 const tentang = () => {
   return (
-    <div>
-    <div className="w-full h-screen absolute top-0 left-0 z-0">
-      <ParticklesBG />
-    </div>
       <div className="container">
         <Navbar />
         <Profile/>
         <Footer />
     
     </div>
-  </div>
   )
 }
 
