@@ -79,3 +79,7 @@
     transform: translateY(-10px); /* Sesuaikan jarak naik turun di sini */
   }
 }
+.paragraphMargin {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}

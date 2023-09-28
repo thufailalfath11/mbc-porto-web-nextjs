@@ -38,8 +38,9 @@ const Profile = () => {
 
   return (
     <div className="container">
-
+      
       <h1 className={styles.title}>PEMBINA</h1>
+      <div className={styles.separator}></div>
       <div className={styles.container} data-aos="fade-up">
         {pembinaData.map((item) => (
           <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
@@ -58,7 +59,9 @@ const Profile = () => {
           </div>
         ))}
       </div>
+      <div className={styles.separator}></div>
       <h1 className={styles.title}>ASISTEN</h1>
+      <div className={styles.separator}></div>
       <div className={styles.container} data-aos="fade-up">
         {asistenData.map((item) => (
           <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
@@ -78,7 +81,9 @@ const Profile = () => {
           </div>
         ))}
       </div>
+      <div className={styles.separator}></div>
       <h1 className={styles.title}>CAAS</h1>
+      <div className={styles.separator}></div>
       <div className={styles.container} data-aos="fade-up">
         {caasData.map((item) => (
           <div className={styles.homeContainer} key={item.id} data-aos="fade-up">
