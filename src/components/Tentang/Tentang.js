@@ -9,13 +9,8 @@ import { items } from "./items";
 function Tentang() {
   return (
     <div className={styles.container}>
-<<<<<<< Updated upstream
-      {items.map((item, index) => (
-        <div className={styles.item} key={item.id} style={{ marginTop: '4cm' }}>
-=======
       {items.map((item) => (
         <div className={styles.item} key={item.id}>
->>>>>>> Stashed changes
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>
