@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./Tentang.module.css";
 import 'aos/dist/aos.css';
@@ -8,9 +9,8 @@ import { items } from "./items";
 function Tentang() {
   return (
     <div className={styles.container}>
-
-      {items.map(item => (
-        <div className={styles.item} key={item.id}>
+      {items.map((item, index) => (
+        <div className={styles.item} key={item.id} style={{ marginTop: '4cm' }}>
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.desc}>{item.desc}</p>

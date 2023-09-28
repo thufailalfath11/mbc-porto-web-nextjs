@@ -47,6 +47,9 @@ function MyTucTuc() {
               <button onClick={openModal} className={styles.scanQrButton}>
                 Scan QR
               </button>
+              <button onClick={openModal} className={styles.scanTI}>
+                Target Image
+              </button>
             </div>
           </div>
         </div>
@@ -54,7 +57,7 @@ function MyTucTuc() {
           <Image
             className={styles.img}
             fill={true}
-            src="/mytuctuc/gis.jpeg"
+            src="/mytuctuc/GIS.jpg"
             alt=""
           />
         </div>

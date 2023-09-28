@@ -24,7 +24,7 @@ function MyTucTuc() {
       <div className={styles.item}>
         <div className={styles.content}>
           <h1 className={styles.title}>Ruins</h1>
-          <p className={styles.desc}>DESKRIPSI RUINS</p>
+          <p className={styles.desc}>RUINS adalah sebuah permainan bergenre RPG dengan sudut pandang isometrik yang menarik. Game ini terinspirasi dari game Fallout Classic yang akan membuat Anda bernostalgia. Anda akan dibawa kedalam petualangan di dunia post apocalyptic dan ikuti cerita yang ada didalamnya.</p>
           <div className={styles.containerbtn}>
             <div className={styles.Button}>
               <Button
@@ -38,7 +38,7 @@ function MyTucTuc() {
           <Image
             className={styles.img}
             fill={true}
-            src="/Ruins/Ruins.png"
+            src="/Ruins/GT.png"
             alt=""
           />
         </div>

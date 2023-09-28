@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./Divisi.module.css";
 import 'aos/dist/aos.css';

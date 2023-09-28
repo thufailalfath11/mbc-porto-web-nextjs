@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import styles from "./kontak.module.css";
 import Navbar from "@/components/Navbar/page";
