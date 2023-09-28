@@ -84,6 +84,7 @@ function Beranda() {
                 height={500}
                 data-aos="fade-right"
               />
+
               <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2
                   className="text-4xl font-bold mb-2 bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600"

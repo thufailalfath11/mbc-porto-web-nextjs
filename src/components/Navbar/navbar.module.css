@@ -1,13 +1,14 @@
-/* Default CSS yang berlaku untuk keduanya */
 .container {
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 2px solid var(--border-color, #e40000);
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
-
+.containernavblur {
+}
 .containerlogo {
   display: flex;
   flex-wrap: wrap;
