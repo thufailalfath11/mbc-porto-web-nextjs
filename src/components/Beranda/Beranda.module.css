@@ -83,3 +83,27 @@
   margin-top: 20px; /* Adjust the top margin as needed */
   margin-bottom: 20px; /* Adjust the bottom margin as needed */
 }
+
+.img {
+  object-fit: fill;
+  border-radius: 25px;
+}
+
+.imgContainer {
+  flex: 1;
+  justify-content: center;
+  display: flexbox;
+  flex-grow: 1;
+}
+.imgContainer {
+  flex: 1;
+  justify-content: center;
+  flex-grow: 1;
+}
+.txtcontainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
