@@ -1,13 +1,38 @@
-.container{
-    height: 75px;
+.container {
+  height: 75px;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 27px;
+  font-weight: bold;
+  font-size: 27px;
 }
 
-.copyright{
-    justify-content: center ;
-    align-items: center;
+.copyright {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: smaller;
+  padding-left: 10px;
+  color: lightslategrey;
+}
+.containerlogo {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 40px;
+  z-index: 10;
+  color: #e40000;
+}
+.logo2 {
+  font-size: 25px;
+  font-weight: bolder;
+  z-index: 10;
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  margin-top: 17px;
 }

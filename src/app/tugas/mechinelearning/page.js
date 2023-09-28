@@ -7,7 +7,7 @@ const mechinelearning = () => {
     <div className="container">
       <Navbar />
       <iframe
-        src="https://prediksikualitasudara.streamlit.app/Mapping_Demo/?embed=true"
+        src="https://tubesbd.streamlit.app/?embed=true"
         width="100%"
         height="1080"
         frameBorder="0"

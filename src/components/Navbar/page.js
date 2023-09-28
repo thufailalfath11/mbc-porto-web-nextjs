@@ -7,22 +7,22 @@ import DarkModeToggle from "../DarkMode/DarkModeToggle";
 const links = [
   {
     id: 1,
-    title: "| Beranda",
+    title: " Beranda",
     url: "/beranda",
   },
   {
     id: 2,
-    title: "| Tentang",
+    title: " Tentang",
     url: "/tentang",
   },
   {
     id: 3,
-    title: "| Profile",
+    title: " Profile",
     url: "/profile",
   },
   {
     id: 4,
-    title: "| Tugas",
+    title: " Tugas",
     url: "/tugas",
     submenu: [
       {
@@ -49,7 +49,7 @@ const links = [
   },
   {
     id: 5,
-    title: "| Kontak",
+    title: " Kontak",
     url: "/kontak",
   },
 ];
@@ -110,7 +110,7 @@ const Navbar = () => {
       </div>
       <div className={styles.links}>
         {links.map((link) =>
-          link.title === "| Tugas" ? (
+          link.title === " Tugas" ? (
             <div
               key={link.id}
               className={styles.submenu}
