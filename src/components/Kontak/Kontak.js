@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Kontak.module.css";
+import styles from "./kontak.module.css";
 import Navbar from "@/components/Navbar/page";
 import Footer from "@/components/Footer/page";
 import Link from "next/link";
