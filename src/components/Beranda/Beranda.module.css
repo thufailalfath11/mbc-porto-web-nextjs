@@ -1,29 +1,25 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; 
-    height: 900px;
-    overflow: hidden;
-    
-  }
+  display: flex;
 
-  .konten{
-    height: auto;
-  }
-  
-  .title {
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 100px; /* Menggeser judul ke atas */
-    margin-bottom: 20px; /* Mengurangi jarak bawah judul */
-  }
-  
- 
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 900px;
+  overflow: hidden;
+}
 
- 
-  
+.konten {
+  height: auto;
+}
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px; /* Menggeser judul ke atas */
+  margin-bottom: 20px; /* Mengurangi jarak bawah judul */
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -40,35 +36,46 @@
 }
 
 .about {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .scroll-down-animation {
-    animation: scrollDown 1s ease infinite;
+  animation: scrollDown 1s ease infinite;
+}
+.desk {
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+@keyframes scrollDown {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  @keyframes scrollDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(10px); /* Adjust the distance you want to scroll down */
-    }
+  50% {
+    transform: translateY(
+      10px
+    ); /* Adjust the distance you want to scroll down */
   }
+}
 
-  .scrollArrow {
-    text-align: center;
-    font-size: 70px; /* Ukuran font tanda panah */
-    margin-top: 100px; /* Jarak antara teks dan tanda panah */
-    align-items: center;
-    justify-content: center;
-    animation: bounceUpDown 1.5s infinite;
+.scrollArrow {
+  text-align: center;
+  font-size: 70px; /* Ukuran font tanda panah */
+  margin-top: 100px; /* Jarak antara teks dan tanda panah */
+  align-items: center;
+  justify-content: center;
+  animation: bounceUpDown 1.5s infinite;
+}
+
+@keyframes bounceUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  @keyframes bounceUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Sesuaikan jarak naik turun di sini */
-    }
+  50% {
+    transform: translateY(-10px); /* Sesuaikan jarak naik turun di sini */
   }
+}

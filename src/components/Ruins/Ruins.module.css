@@ -19,7 +19,6 @@
   flex: 1;
   height: 500px;
   position: relative;
-  margin-top: 50 px;
 }
 
 .img {
@@ -37,12 +36,12 @@
 .title {
   font-size: 50px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .desc {
   font-size: 20px;
-  text-align: justify;
-  text-justify: inter-word;
 }
 .containerbtn {
   display: flex;

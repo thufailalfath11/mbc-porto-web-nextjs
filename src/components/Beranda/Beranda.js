@@ -8,7 +8,7 @@ import AOS from "aos";
 
 function Beranda() {
   const initialContent1 = "SELAMAT DATANG DI TUGAS BESAR CAAS MBC";
-  const initialContent2 = "Selamat Menikmati";
+  const initialContent2 = "WE ATTACK, WE PROTECT!";
   const [showAbout, setShowAbout] = useState(false);
   const [showLatBelakang, setShowLatBelakang] = useState(false);
   const [scrollDownAnimation, setScrollDownAnimation] = useState(false);
@@ -17,7 +17,7 @@ function Beranda() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
       once: true,
     });
 
@@ -34,7 +34,7 @@ function Beranda() {
 
     setTimeout(() => {
       setStartTyping(true);
-    }, initialContent1.length * 150);
+    }, initialContent1.length * 160);
 
     // Set showScrollArrow to true when typing the second content finishes
     setTimeout(() => {
@@ -72,42 +72,70 @@ function Beranda() {
       </div>
 
       <section id="about">
-      <div className={styles.about}>
-  {showAbout && (
-    <div className="md:grid md:grid-cols-2 gap-8 justify-center items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16" data-aos="fade-up">
-      <Image src="/about-image.png" width={500} height={500} data-aos="fade-right" />
-      <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-        <h2 className="text-4xl font-bold mb-2 bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600" data-aos="fade-up">
-        Karya Tubes Kami
-        </h2>
-        <p className="text-base lg:text-lg mb-4" data-aos="fade-up">
-        Halo Sobat MBCporto! Di sini, Anda akan menemukan berbagai proyek yang telah kami kerjakan dengan penuh dedikasi dan semangat. kami senang berbagi perjalanan kreatif dan pencapaian kami dalam mengatasi tantangan yang telah kami hadapi. Mari kita menjelajahi portfolio ini bersama dan lihat bagaimana kami telah mewujudkan ide-ide dalam hasil Tubes kami.
-        </p>
-      </div>
-    </div>
-  )}
-</div>
+        <div className={styles.about}>
+          {showAbout && (
+            <div
+              className="md:grid md:grid-cols-2 gap-8 justify-center items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+              data-aos="fade-up"
+            >
+              <Image
+                src="/about-image.png"
+                width={500}
+                height={500}
+                data-aos="fade-right"
+              />
+              <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+                <h2
+                  className="text-4xl font-bold mb-2 bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600"
+                  data-aos="fade-up"
+                >
+                  Karya Tubes Kami
+                </h2>
 
+                <p className={styles.desk} data-aos="fade-up">
+                  Halo Sobat MBCporto! Di sini, Anda akan menemukan berbagai
+                  proyek yang telah kami kerjakan dengan penuh dedikasi dan
+                  semangat. kami senang berbagi perjalanan kreatif dan
+                  pencapaian kami dalam mengatasi tantangan yang telah kami
+                  hadapi. Mari kita menjelajahi portfolio ini bersama dan lihat
+                  bagaimana kami telah mewujudkan ide-ide dalam hasil Tubes
+                  kami.
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
       </section>
       <section id="about">
-      <div className={styles.about}>
-        <div
-          className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
-          data-aos="fade-up"
-        >
-          <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-            <h2 className="text-4xl font-bold  mb-4 " data-aos="fade-up">
-              Latar Belakang
-            </h2>
-            {showLatBelakang && (
-              <p className="text-base lg:text-lg" data-aos="fade-up">
-                Website ini merupakan hasil kolaboratif dari Tim CAAS di MBCLab yang terdiri dari anggota-anggota berbakat dari berbagai latar devisi, yang bersatu untuk menjalankan serangkaian proyek Tugas Besar CAAS MBClab yang penuh semangat. Melalui kerjasama kami, kami telah berhasil menghasilkan karya-karya yang mencerminkan kolaborasi lintas disiplin, kreativitas, dan tekad kami dalam mencapai prestasi luar biasa. Kami berharap karya-karya kami menginspirasi dan menunjukkan potensi yang kami tawarkan melalui kerjasama tim kami. Terima kasih telah mengunjungi halaman kami dan selamat menikmati eksplorasi kami dalam dunia riset dan inovasi di MBCLab.
-              </p>
-            )}
+        <div className={styles.about}>
+          <div
+            className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+            data-aos="fade-up"
+          >
+            <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+              <h2 className="text-4xl font-bold  mb-4 " data-aos="fade-up">
+                Latar Belakang
+              </h2>
+              {showLatBelakang && (
+                <p className={styles.desk} data-aos="fade-up">
+                  Website ini merupakan hasil kolaboratif dari Tim CAAS di
+                  MBCLab yang terdiri dari anggota-anggota berbakat dari
+                  berbagai latar devisi, yang bersatu untuk menjalankan
+                  serangkaian proyek Tugas Besar CAAS MBClab yang penuh
+                  semangat. Melalui kerjasama kami, kami telah berhasil
+                  menghasilkan karya-karya yang mencerminkan kolaborasi lintas
+                  disiplin, kreativitas, dan tekad kami dalam mencapai prestasi
+                  luar biasa. Kami berharap karya-karya kami menginspirasi dan
+                  menunjukkan potensi yang kami tawarkan melalui kerjasama tim
+                  kami. Terima kasih telah mengunjungi halaman kami dan selamat
+                  menikmati eksplorasi kami dalam dunia riset dan inovasi di
+                  MBCLab.
+                </p>
+              )}
+            </div>
+            <Image src="/1.png" width={500} height={500} data-aos="fade-left" />
           </div>
-          <Image src="/1.png" width={500} height={500} data-aos="fade-left" />
         </div>
-      </div>
       </section>
     </div>
   );

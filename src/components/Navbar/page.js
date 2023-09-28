@@ -1,8 +1,8 @@
-'use client'
-import React, { useState, useEffect } from 'react';
-import styles from './navbar.module.css';
-import Link from 'next/link';
-import DarkModeToggle from '../DarkMode/DarkModeToggle';
+"use client";
+import React, { useState, useEffect } from "react";
+import styles from "./navbar.module.css";
+import Link from "next/link";
+import DarkModeToggle from "../DarkMode/DarkModeToggle";
 
 const links = [
   {
@@ -27,7 +27,7 @@ const links = [
     submenu: [
       {
         id: 41,
-        title: "MyTucTuc",
+        title: "MyTuc",
         url: "/tugas/mytuctuc",
       },
       {
@@ -55,20 +55,21 @@ const links = [
 ];
 
 const Navbar = () => {
- 
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
-    }, 1000); 
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
 
- 
-  const formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const formattedTime = currentTime.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
 
   const [showSubMenu, setShowSubMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -93,13 +94,22 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarClassName = isScrolled ? `${styles.container} ${styles.fixedNavbar}` : styles.container;
+  const navbarClassName = isScrolled
+    ? `${styles.container} ${styles.fixedNavbar}`
+    : styles.container;
 
   return (
     <div className={navbarClassName}>
-      <Link className={styles.logo} href='/beranda'>MBC Porto</Link>
+      <div className={styles.containerlogo}>
+        <Link className={styles.logo} href="/beranda">
+          MBC
+        </Link>
+        <Link className={styles.logo2} href="/beranda">
+          Porto
+        </Link>
+      </div>
       <div className={styles.links}>
-        {links.map(link => (
+        {links.map((link) =>
           link.title === "| Tugas" ? (
             <div
               key={link.id}
@@ -123,16 +133,16 @@ const Navbar = () => {
               )}
             </div>
           ) : (
-            <Link key={link.id} href={link.url}>{link.title}</Link>
+            <Link key={link.id} href={link.url}>
+              {link.title}
+            </Link>
           )
-        ))}
+        )}
       </div>
-      <div className='flex justify-center items-center gap-4'>
-      <DarkModeToggle/>
-      <div className={styles.currentTime}>
-        {formattedTime}
-        </div>
-        </div>
+      <div className="flex justify-center items-center gap-4">
+        <DarkModeToggle />
+        <div className={styles.currentTime}>{formattedTime}</div>
+      </div>
     </div>
   );
 };
