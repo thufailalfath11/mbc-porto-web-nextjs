@@ -20,10 +20,7 @@ function Divisi() {
     <div className={styles.container}>
       {items.map((item, index) => (
         <Element name={`item${item.id}`} key={item.id}>
-          <div
-            className={styles.item}
-            data-aos="fade-up"
-          >
+          <div className={styles.item} data-aos="fade-up">
             <div className={styles.content}>
               <h1 className={styles.title}>{item.title}</h1>
               <p className={styles.desc}>{item.desc}</p>
@@ -40,22 +37,6 @@ function Divisi() {
           </div>
         </Element>
       ))}
-
-      {/* Buat tombol-tombol untuk menavigasi ke setiap elemen */}
-      <div className={styles.navigation}>
-        {items.map((item) => (
-          <Link
-            key={item.id}
-            to={`item${item.id}`}
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            {item.title}
-          </Link>
-        ))}
-      </div>
     </div>
   );
 }
