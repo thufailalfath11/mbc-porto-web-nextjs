@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Untuk mengisi lebar secara merata */
+  gap: 20px; /* Spasi antara item */
+}
+.homeContainer {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: calc(25% - 10px); /* Mengatur lebar untuk 4 kolom dengan spasi */
+  flex-basis: calc(25% - 20px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.separator {
+  width: 100%;
+  height: 1px; /* Adjust the height of the separator line */
+  background-color: #ccc; /* Adjust the color of the separator line */
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+.profileCard {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background-color: #778899;
+  padding: 30px;
+  border-radius: 50%;
+
+  transition: all 0.4s;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profileCard:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+
+.img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.img img {
+  object-fit: fill;
+  width: 100;
+  border-radius: 50%;
+  transition: all 0.4s;
+  z-index: 99;
+}
+
+.profileCard:hover img {
+  border-radius: 10px;
+  transform: translateY(-100px);
+}
+
+.caption {
+  text-align: center;
+  transform: translateY(-50px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.profileCard:hover .caption {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.caption h3 {
+  font-size: 21px;
+  color: #0c52a1;
+  font-weight: 600;
+}
+
+.caption p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 2px 0 12px 0;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  color: #333; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+  background: linear-gradient(
+    to right,
+    #00ff00,
+    #00bfff
+  ); /* Gradient background */
+  padding: 10px; /* Add padding to the section title */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.nama {
+  text-align: center;
+}

@@ -19,6 +19,24 @@ const links = [
     id: 3,
     title: " Profile",
     url: "/profile",
+    submenu: [
+      {
+        id: 31,
+        title: "Pembina",
+        url: "/profile/pembina",
+      },
+      {
+        id: 32,
+        title: "Asisten",
+        url: "/profile/asisten",
+      },
+      {
+        id: 33,
+        title: "Calon Asisten",
+        url: "/profile/caas",
+      },
+      
+    ],
   },
   {
     id: 4,
@@ -110,7 +128,7 @@ const Navbar = () => {
       </div>
       <div className={styles.links}>
         {links.map((link) =>
-          link.title === " Tugas" ? (
+          link.title === " Tugas" || link.title === " Profile" ? (
             <div
               key={link.id}
               className={styles.submenu}

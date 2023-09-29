@@ -13,6 +13,7 @@ function Beranda() {
   const [showLatBelakang, setShowLatBelakang] = useState(false);
   const [scrollDownAnimation, setScrollDownAnimation] = useState(false);
   const [startTyping, setStartTyping] = useState(false); // State untuk mengontrol TypingText kedua
+  const [showScrollArrow, setShowScrollArrow] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -20,13 +21,12 @@ function Beranda() {
       once: true,
     });
 
-    // Listen for scroll events and set showAbout to true when scrolled
+   
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
         setShowAbout(true);
       }
       if (window.scrollY > 1000) {
-        // Adjust the scroll position as needed
         setShowLatBelakang(true);
       }
     });
@@ -35,7 +35,7 @@ function Beranda() {
       setStartTyping(true);
     }, initialContent1.length * 160);
 
-    // Set showScrollArrow to true when typing the second content finishes
+    
     setTimeout(() => {
       setShowScrollArrow(true);
     }, (initialContent1.length + initialContent2.length) * 150);
