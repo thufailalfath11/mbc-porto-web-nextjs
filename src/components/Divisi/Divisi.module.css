@@ -42,3 +42,8 @@
   text-align: justify;
   text-justify: inter-word;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3cm; /* This sets the vertical margin between items to 5 centimeters */
+}

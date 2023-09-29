@@ -61,6 +61,7 @@ function MyTucTuc() {
             alt=""
           />
         </div>
+        
       </div>
 
       {/* Modal */}
@@ -68,6 +69,7 @@ function MyTucTuc() {
         <div className={styles.modal}>
           <div className={styles.modalContent}>
             <img src="/mytuctuc/QR.jpeg" alt="QR Code" />
+            <img src="/mytuctuc/gis.jpeg" alt="QR Code" />
             <button onClick={closeModal} className={styles.closeButton}>
               Close
             </button>

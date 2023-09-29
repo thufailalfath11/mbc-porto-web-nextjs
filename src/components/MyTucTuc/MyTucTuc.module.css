@@ -64,7 +64,7 @@
   display: flex;
   background-color: #007bff; /* Warna latar belakang tombol */
   color: #fff; /* Warna teks tombol */
-  padding: 18px 18px; /* Padding tombol (sesuaikan sesuai kebutuhan Anda) */
+  padding: 20px 20px; /* Padding tombol (sesuaikan sesuai kebutuhan Anda) */
   border: none; /* Hapus garis tepi tombol */
   border-radius: 5px; /* Sudut melengkung tombol */
   cursor: pointer; /* Ubah kursor saat mengarahkan ke tombol */
@@ -75,7 +75,7 @@
   display: flex;
   background-color: #5b1467; /* Warna latar belakang tombol */
   color: #fff; /* Warna teks tombol */
-  padding: 18px 18px; /* Padding tombol (sesuaikan sesuai kebutuhan Anda) */
+  padding: 20px 20px; /* Padding tombol (sesuaikan sesuai kebutuhan Anda) */
   border: none; /* Hapus garis tepi tombol */
   border-radius: 5px; /* Sudut melengkung tombol */
   cursor: pointer; /* Ubah kursor saat mengarahkan ke tombol */
