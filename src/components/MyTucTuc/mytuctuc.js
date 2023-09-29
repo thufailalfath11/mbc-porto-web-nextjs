@@ -6,19 +6,25 @@ import Image from "next/image";
 import Button from "@/common/Button/Button";
 
 function MyTucTuc() {
-  // State untuk mengontrol tampilan modal
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Fungsi untuk membuka modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
+    setIsModalOpen2(false);
   };
 
-  // Fungsi untuk menutup modal
-  const closeModal = () => {
+  const openModal2 = () => {
+    setIsModalOpen2(true);
     setIsModalOpen(false);
   };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  const closeModal2 = () => {
+    setIsModalOpen2(false);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -47,6 +53,9 @@ function MyTucTuc() {
               <button onClick={openModal} className={styles.scanQrButton}>
                 Scan QR
               </button>
+              <button onClick={openModal2} className={styles.scanQrButton}>
+                Target Image
+              </button>
             </div>
           </div>
         </div>
@@ -61,13 +70,25 @@ function MyTucTuc() {
         
       </div>
 
-      {/* Modal */}
+     
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
             <img src="/mytuctuc/QR.jpeg" alt="QR Code" />
             <button onClick={closeModal} className={styles.closeButton}>
               Close
+            </button>
+          </div>
+        </div>
+      )}
+      {isModalOpen2 && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent}>
+            {/* Add your modal 2 content here */}
+            
+            <img src="/mytuctuc/gis.jpeg" alt="QR Code" />
+            <button onClick={closeModal2} className={styles.closeButton}>
+              Close Modal 2
             </button>
           </div>
         </div>
