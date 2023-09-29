@@ -16,7 +16,7 @@ export const items = [
   {
     id: 3,
     title: "Divisi MBC",
-    desc: "Saat ini Laboratorium MBC Memiliki 4 devisi fokus khusus Cyber Security, Bigdata, GIS, dan Gametech.",
+    desc: "Saat ini Laboratorium MBC Memiliki 4 divisi fokus khusus Cyber Security, Bigdata, GIS, dan Gametech.",
     image: "/divisi/divisikami.png",
     url: "/tentang/divisi",
   },
