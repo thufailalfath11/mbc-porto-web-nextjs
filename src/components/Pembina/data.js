@@ -32,6 +32,15 @@ export const items = {
       nip: "20900007",
       posisi: "Pembina",
     },
+    {
+      id: 4,
+      title: "Dr.Eng. Favian Dewanta, S.T., M.Eng.",
+      image: "/pembina/FAV.png",
+      codedosen: "FAV",
+      nip: "15870022",
+      posisi: "Pembina",
+    },
+
   ],
   asisten: [
     {
