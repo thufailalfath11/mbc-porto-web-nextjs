@@ -47,9 +47,6 @@ function MyTucTuc() {
               <button onClick={openModal} className={styles.scanQrButton}>
                 Scan QR
               </button>
-              <button onClick={openModal} className={styles.scanTI}>
-                Target Image
-              </button>
             </div>
           </div>
         </div>
@@ -69,7 +66,6 @@ function MyTucTuc() {
         <div className={styles.modal}>
           <div className={styles.modalContent}>
             <img src="/mytuctuc/QR.jpeg" alt="QR Code" />
-            <img src="/mytuctuc/gis.jpeg" alt="QR Code" />
             <button onClick={closeModal} className={styles.closeButton}>
               Close
             </button>

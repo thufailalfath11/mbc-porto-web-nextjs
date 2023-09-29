@@ -353,7 +353,7 @@ export const items = {
       id: 14,
       title: "Muhammad Abdul Hakim",
       desc: "TT-45-08",
-      image: "/team/Hakim.png",
+      image: "/team/hakim.jpg",
       nim: "1101213039",
       divisi: "GIS",
     },

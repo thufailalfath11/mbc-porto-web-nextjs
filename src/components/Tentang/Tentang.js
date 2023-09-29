@@ -1,6 +1,5 @@
 "use client";
-import TypingText from "@/common/TypingText/TypingText";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./Tentang.module.css";
 import "aos/dist/aos.css";
 import Image from "next/image";
