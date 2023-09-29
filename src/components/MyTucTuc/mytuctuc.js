@@ -1,9 +1,10 @@
-"use client";
-import React, { useState } from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import styles from "./MyTucTuc.module.css";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Button from "@/common/Button/Button";
+import AOS from "aos";
 
 function MyTucTuc() {
   // State untuk mengontrol tampilan modal
@@ -19,10 +20,21 @@ function MyTucTuc() {
     setIsModalOpen(false);
   };
 
+  // Inisialisasi AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durasi animasi dalam milidetik
+      once: true, // Animasi hanya akan diputar sekali saat pertama kali tampil
+    });
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          data-aos="fade-up" // Efek fade-in saat muncul
+        >
           <h1 className={styles.title}>MyTuc</h1>
           <p className={styles.desc}>
             Tuc-Tuc merupakan alat transportasi yang berada di dalam kampus yang
@@ -50,7 +62,10 @@ function MyTucTuc() {
             </div>
           </div>
         </div>
-        <div className={styles.imgContainer}>
+        <div
+          className={styles.imgContainer}
+          data-aos="fade-right" // Efek fade-in dari kanan saat muncul
+        >
           <Image
             className={styles.img}
             fill={true}
@@ -58,7 +73,6 @@ function MyTucTuc() {
             alt=""
           />
         </div>
-        
       </div>
 
       {/* Modal */}

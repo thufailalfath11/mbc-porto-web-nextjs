@@ -1,11 +1,12 @@
-"use client";
-import React, { useState } from "react";
+"use client"
+import React, { useState, useEffect } from "react";
 import styles from "./Ruins.module.css";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Button from "@/common/Button/Button";
+import AOS from "aos";
 
-function MyTucTuc() {
+function Ruins() {
   // State untuk mengontrol tampilan modal
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -19,17 +20,28 @@ function MyTucTuc() {
     setIsModalOpen(false);
   };
 
+  // Inisialisasi AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durasi animasi dalam milidetik
+      once: true, // Animasi hanya akan diputar sekali saat pertama kali tampil
+    });
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          data-aos="fade-up" // Efek fade-in saat muncul
+        >
           <h1 className={styles.title}>Ruins</h1>
           <p className={styles.desc}>
             RUINS adalah sebuah permainan bergenre RPG dengan sudut pandang
             isometrik yang menarik. Game ini terinspirasi dari game Fallout
             Classic yang akan membuat Anda bernostalgia. Anda akan dibawa
             kedalam petualangan di dunia post apocalyptic dan ikuti cerita
-            yang ada didalamnya.
+            yang ada didalamnya.
           </p>
           <div className={styles.containerbtn}>
             <div className={styles.Button}>
@@ -40,7 +52,10 @@ function MyTucTuc() {
             </div>
           </div>
         </div>
-        <div className={styles.imgContainer}>
+        <div
+          className={styles.imgContainer}
+          data-aos="fade-right" // Efek fade-in dari kanan saat muncul
+        >
           <Image
             className={styles.img}
             fill={true}
@@ -50,6 +65,7 @@ function MyTucTuc() {
         </div>
       </div>
 
+      {/* Modal */}
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
@@ -64,4 +80,4 @@ function MyTucTuc() {
   );
 }
 
-export default MyTucTuc;
+export default Ruins;
