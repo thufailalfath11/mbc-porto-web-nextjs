@@ -31,8 +31,5 @@
   font-size: 25px;
   font-weight: bolder;
   z-index: 10;
-  color: white;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
   margin-top: 17px;
 }
