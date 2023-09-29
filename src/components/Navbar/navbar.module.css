@@ -6,6 +6,7 @@
     padding: 1rem;
     background: transparent;
     backdrop-filter: blur(10px);
+    z-index: 100;
   }
   .containernavblur {
   }
@@ -57,9 +58,9 @@
     top: 100%;
     left: 0;
     background-color: var(--menu-bg-color, #778899);
-    z-index: 1;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   }
 
   .submenu:hover .submenuContent {
